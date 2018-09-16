@@ -18,17 +18,6 @@ export const Routes = createMaterialBottomTabNavigator(
       screen: Home,
       navigationOptions: {
         tabBarIcon: homeIcon,
-        header:(
-          <Appbar.Header>
-              <Appbar.BackAction onPress={() => navigation.goBack()} />
-            <Appbar.Content
-              title="Title"
-              subtitle={'Subtitle'}
-            />
-              <Appbar.Action icon="search" onPress={() => {}} />
-              <Appbar.Action icon="more" onPress={() => {}} />
-          </Appbar.Header>
-         ),
       },
     },
     Explore: { 

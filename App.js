@@ -25,13 +25,13 @@ export default class App extends Component<Props> {
   componentWillMount() {
 
     var config = {
-    apiKey: "AIzaSyAJZnkc5Nd7-DIGuLkmqYBXG6_yslLL8Lc",
-    authDomain: "ping-fb.firebaseapp.com",
-    databaseURL: "https://ping-fb.firebaseio.com",
-    storageBucket: "ping-fb.appspot.com",
-    appId:"1:26781916683:android:6e1b08e5872806e6",
-    projectId: "ping-fb",
-    messagingSenderId: "26781916683"
+    apiKey: "AIzaSyC6InOy2cvJmhDBFE8fCJ6HJUn4nMZbCQM",
+    authDomain: "ping-52c17.firebaseapp.com",
+    databaseURL: "https://ping-52c17.firebaseio.com",
+    storageBucket: "ping-52c17.appspot.com",
+    appId:"1:1066232610739:android:6e1b08e5872806e6",
+    projectId: "ping-52c17",
+    messagingSenderId: "1066232610739"
   };
         firebase.initializeApp(config);
 

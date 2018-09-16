@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "26781916683",
-    "firebase_url": "https://ping-fb.firebaseio.com",
-    "project_id": "ping-fb",
-    "storage_bucket": "ping-fb.appspot.com"
+    "project_number": "1066232610739",
+    "firebase_url": "https://ping-52c17.firebaseio.com",
+    "project_id": "ping-52c17",
+    "storage_bucket": "ping-52c17.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:26781916683:android:6e1b08e5872806e6",
+        "mobilesdk_app_id": "1:1066232610739:android:6e1b08e5872806e6",
         "android_client_info": {
           "package_name": "com.ping"
         }
       },
       "oauth_client": [
         {
-          "client_id": "26781916683-c02sb06bsn9tfehvrvul9j6t8a63bm63.apps.googleusercontent.com",
+          "client_id": "1066232610739-5tuel9aheevkcrnqoiftqsd5eoj296hf.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAJZnkc5Nd7-DIGuLkmqYBXG6_yslLL8Lc"
+          "current_key": "AIzaSyBKZ9xDaOscpflDAjdBPxs8PjS6-bY0Q0Y"
         }
       ],
       "services": {
