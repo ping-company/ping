@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, ScrollView} from 'react-native';
 
-import { Button, Card, Title, Paragraph } from 'react-native-paper';
+import { Button, Card, Title, Paragraph, Appbar } from 'react-native-paper';
 
 import firebase from 'react-native-firebase';
 import type { Notification, NotificationOpen } from 'react-native-firebase';
@@ -107,74 +107,84 @@ export default class Home extends Component<Props> {
 
   render() {
     return (
+
+      
+
       <ScrollView
         style={styles.container}
         contentContainerStyle={styles.content}
       >
+
+
+      <Appbar.Header style={styles.heading}>
+
+        <Appbar.Content
+          title="Welcome to Ping"
+          color="white"
+
+        />
+      </Appbar.Header>
+
+
       <ScrollView
         horizontal
       >
+
+        
+
         <Card style={styles.card}>
           <Card.Content>
-            <Title>Card title</Title>
-            <Paragraph>Card content</Paragraph>
+            <Title >Sport</Title>
           </Card.Content>
-          <Card.Cover source={{ uri: 'https://picsum.photos/100' }} />
+          <Card.Cover source={{ uri: 'https://images.sciencedaily.com/2017/02/170215131600_1_900x600.jpg' }} />
+        </Card>
+
+        <Card style={styles.card}>
+          <Card.Content>
+            <Title >Campus</Title>
+          </Card.Content>
+          <Card.Cover source={{ uri: 'http://static0.cloudapp.net/uconn/content/uploads/2014/10/living-on-campus.jpg' }} />
         </Card>
         <Card style={styles.card}>
           <Card.Content>
-            <Title>Card title</Title>
-            <Paragraph>Card content</Paragraph>
+            <Title >Class</Title>
           </Card.Content>
-          <Card.Cover source={{ uri: 'https://picsum.photos/150' }} />
+          <Card.Cover source={{ uri: 'https://www.whistleblowerattorneys-blog.com/files/2014/06/College-classroom.jpg' }} />
         </Card>
-        <Card style={styles.card}>
-          <Card.Content>
-            <Title>Card title</Title>
-            <Paragraph>Card content</Paragraph>
-          </Card.Content>
-          <Card.Cover source={{ uri: 'https://picsum.photos/250' }} />
-        </Card>
-        <Card style={styles.card}>
-          <Card.Content>
-            <Title>Card title</Title>
-            <Paragraph>Card content</Paragraph>
-          </Card.Content>
-          <Card.Cover source={{ uri: 'https://picsum.photos/250' }} />
-        </Card>
+        
       </ScrollView>
 
         <Card style={styles.card}>
-            <Card.Cover source={{ uri: 'https://picsum.photos/200' }} />
+            <Card.Cover source={{ uri: 'https://image.freepik.com/free-icon/school_318-23393.jpg' }} />
             <Card.Content>
-              <Title>Card title</Title>
-              <Paragraph>Card content</Paragraph>
+              <Title>Cours canceled</Title>
+              <Paragraph>Physics 101 at 9AM today has been cancellled</Paragraph>
             </Card.Content>
             <Card.Actions>
-              <Button>Cancel</Button>
-              <Button>Ok</Button>
+              <Button color="#FFD42E" icon={{uri:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAABGklEQVR4Ae3RAcZCQRiF4buDfwshBGi+2UQgcIGAVtpSIuS/KyilG+UTcbk6zIH3GQBm3mM6AAAAAAAAAACA+eqf/yZBXcV/2XeCVPYx1FXj/FjGUMd45AQp/1HHGGLZNL+e61jHnKDmv8652YT1IvPfE2LX/Sh27/ycsF60yT/lk58JYn6eU4MJccjnlAmZ/33i0OAH4jg9Qcw/5g9YJpS+m6n0xvzpCfVe+nn59S7kGyYo+YYJWz3fO+E2PaFs9XzPhMy/6fmWCXq+YUJs9HzrhLh+JsQmrnq+bYKeb52g53snXPR88wQ93z9Bz/dP0PP9E/R89wQ93zpBz7dO0POtE/R86wQ93zpBzzdP+MoHAAAAAAAAAADAExTnTW20AtjhAAAAAElFTkSuQmCC'}} mode="contained"/>
+              <Button color="#FFD42E" icon={{uri:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAABEElEQVR4Ae3PAQYCURSF4QtIIiIAAmDAvLu9MAUBAlpLEAgCIWg5UzyZeAKnedfwfws4/mMAAAAAAAAAAAD/lbrUTTrfe+9TN+l8/UJ4vn4hPF++EJ8vX4jPly/E54sX4vOFC/H5woX4fOFCfH46p7NwITz/spltZukiXIjOtzfhQmS+X3N+vuBX4UJMvs/ti8+FC7H5woX4/OLCrcIFOf9W5n80iwoX1PxmYSX5Qnx+/AUhv7xwH+2CkH//mV/w5VgXhHxf2tsELvhezB8uPMqldmfjS0c1P2tWxYWDZVUvPHK+fiEdrR4/ffKblQnyBTFfuDDkKxee3vvJ6mt3OV/VrtutAQAAAAAAAAAAYDJeeA5LziNlLMgAAAAASUVORK5CYII='}} mode="contained"/>
             </Card.Actions>
           </Card>
         <Card style={styles.card}>
-            <Card.Cover source={{ uri: 'https://picsum.photos/400' }} />
+            <Card.Cover source={{ uri: 'https://image.freepik.com/free-icon/whistle-with-white-detail_318-43764.png' }} />
             <Card.Content style={styles.content}>
-              <Title>Card title</Title>
-              <Paragraph>Card content</Paragraph>
+              <Title>Game delayed due to weather</Title>
+              <Paragraph>Today's game has been delayed, and may be cancelled due to bad weather</Paragraph>
             </Card.Content>
             <Card.Actions>
-              <Button>Cancel</Button>
-              <Button>Ok</Button>
+              <Button color="#FFD42E" icon={{uri:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAABGklEQVR4Ae3RAcZCQRiF4buDfwshBGi+2UQgcIGAVtpSIuS/KyilG+UTcbk6zIH3GQBm3mM6AAAAAAAAAACA+eqf/yZBXcV/2XeCVPYx1FXj/FjGUMd45AQp/1HHGGLZNL+e61jHnKDmv8652YT1IvPfE2LX/Sh27/ycsF60yT/lk58JYn6eU4MJccjnlAmZ/33i0OAH4jg9Qcw/5g9YJpS+m6n0xvzpCfVe+nn59S7kGyYo+YYJWz3fO+E2PaFs9XzPhMy/6fmWCXq+YUJs9HzrhLh+JsQmrnq+bYKeb52g53snXPR88wQ93z9Bz/dP0PP9E/R89wQ93zpBz7dO0POtE/R86wQ93zpBzzdP+MoHAAAAAAAAAADAExTnTW20AtjhAAAAAElFTkSuQmCC'}} mode="contained"/>
+              <Button color="#FFD42E" icon={{uri:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAABEElEQVR4Ae3PAQYCURSF4QtIIiIAAmDAvLu9MAUBAlpLEAgCIWg5UzyZeAKnedfwfws4/mMAAAAAAAAAAAD/lbrUTTrfe+9TN+l8/UJ4vn4hPF++EJ8vX4jPly/E54sX4vOFC/H5woX4fOFCfH46p7NwITz/spltZukiXIjOtzfhQmS+X3N+vuBX4UJMvs/ti8+FC7H5woX4/OLCrcIFOf9W5n80iwoX1PxmYSX5Qnx+/AUhv7xwH+2CkH//mV/w5VgXhHxf2tsELvhezB8uPMqldmfjS0c1P2tWxYWDZVUvPHK+fiEdrR4/ffKblQnyBTFfuDDkKxee3vvJ6mt3OV/VrtutAQAAAAAAAAAAYDJeeA5LziNlLMgAAAAASUVORK5CYII='}} mode="contained"/>
             </Card.Actions>
           </Card>
         <Card style={styles.card}>
-            <Card.Cover source={{ uri: 'https://picsum.photos/600' }} />
+            <Card.Cover source={{ uri: 'https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX9793694.jpg' }} />
             <Card.Content style={styles.content}>
-              <Title>Card title</Title>
-              <Paragraph>Card content</Paragraph>
+              <Title>50% Reduction for campus students</Title>
+              <Paragraph>The italian restaurant is making 50% derduction for students, the offer is only for 3 days</Paragraph>
             </Card.Content>
             <Card.Actions>
-              <Button>Cancel</Button>
-              <Button>Ok</Button>
+              <Button color="#FFD42E" icon={{uri:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAABGklEQVR4Ae3RAcZCQRiF4buDfwshBGi+2UQgcIGAVtpSIuS/KyilG+UTcbk6zIH3GQBm3mM6AAAAAAAAAACA+eqf/yZBXcV/2XeCVPYx1FXj/FjGUMd45AQp/1HHGGLZNL+e61jHnKDmv8652YT1IvPfE2LX/Sh27/ycsF60yT/lk58JYn6eU4MJccjnlAmZ/33i0OAH4jg9Qcw/5g9YJpS+m6n0xvzpCfVe+nn59S7kGyYo+YYJWz3fO+E2PaFs9XzPhMy/6fmWCXq+YUJs9HzrhLh+JsQmrnq+bYKeb52g53snXPR88wQ93z9Bz/dP0PP9E/R89wQ93zpBz7dO0POtE/R86wQ93zpBzzdP+MoHAAAAAAAAAADAExTnTW20AtjhAAAAAElFTkSuQmCC'}} mode="contained"/>
+              <Button color="#FFD42E" icon={{uri:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAABEElEQVR4Ae3PAQYCURSF4QtIIiIAAmDAvLu9MAUBAlpLEAgCIWg5UzyZeAKnedfwfws4/mMAAAAAAAAAAAD/lbrUTTrfe+9TN+l8/UJ4vn4hPF++EJ8vX4jPly/E54sX4vOFC/H5woX4fOFCfH46p7NwITz/spltZukiXIjOtzfhQmS+X3N+vuBX4UJMvs/ti8+FC7H5woX4/OLCrcIFOf9W5n80iwoX1PxmYSX5Qnx+/AUhv7xwH+2CkH//mV/w5VgXhHxf2tsELvhezB8uPMqldmfjS0c1P2tWxYWDZVUvPHK+fiEdrR4/ffKblQnyBTFfuDDkKxee3vvJ6mt3OV/VrtutAQAAAAAAAAAAYDJeeA5LziNlLMgAAAAASUVORK5CYII='}} mode="contained"/>
             </Card.Actions>
           </Card>
       </ScrollView>
@@ -189,10 +199,30 @@ const styles = StyleSheet.create({
   },
   card: {
     margin: 8,
-    borderRadius: 8
+    borderRadius: 8,
+    position: 'relative',
+    textAlign: 'center',
+    color: 'white'
   },
+
+  centred:{
+    position: 'absolute',
+    top: 50,
+    left: 50
+    //transform: translate(-50%, -50%)
+  },
+
   content: {
     padding: 4,
   },
+
+  heading: {
+      height: 80, 
+      width: 360, 
+      //transform: rotate('180deg'),  
+      backgroundColor: '#FFD42E'
+      //textAlign:'center'
+      //box-shadow: 0 0 '11px' '-3px' rgba(0,0,0,0.29)
+  }
 
 });
