@@ -21,6 +21,22 @@ const instructions = Platform.select({
 type Props = {};
 export default class App extends Component<Props> {
 
+
+  componentWillMount() {
+
+    var config = {
+    apiKey: "AIzaSyAJZnkc5Nd7-DIGuLkmqYBXG6_yslLL8Lc",
+    authDomain: "ping-fb.firebaseapp.com",
+    databaseURL: "https://ping-fb.firebaseio.com",
+    storageBucket: "ping-fb.appspot.com",
+    appId:"1:26781916683:android:6e1b08e5872806e6",
+    projectId: "ping-fb",
+    messagingSenderId: "26781916683"
+  };
+        firebase.initializeApp(config);
+
+    }
+
   async componentDidMount() {
         const notificationOpen: NotificationOpen = await firebase.notifications().getInitialNotification();
         if (notificationOpen) {
