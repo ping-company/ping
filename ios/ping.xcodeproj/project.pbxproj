@@ -1335,11 +1335,8 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-
 				);
 			};
 			name = Release;
@@ -1373,11 +1370,8 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-
 				);
 			};
 			name = Debug;
@@ -1411,11 +1405,8 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-
 				);
 			};
 			name = Release;
@@ -1448,11 +1439,8 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-
 				);
 			};
 			name = Debug;
@@ -1485,11 +1473,8 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-
 				);
 			};
 			name = Release;
