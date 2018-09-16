@@ -1,13 +1,17 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 
+import Icon from 'react-native-vector-icons/FontAwesome';
+const profileIcon = ({tintColor}) => (<Icon name="user" size={24} color={tintColor} />)
 
 type Props = {};
-export default class Channels extends Component<Props> {
+export default class Profile extends Component<Props> {
+  static navigationOptions = {
+    tabBarIcon: profileIcon,
+  }
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Channels</Text>
       </View>
     );
   }
@@ -19,15 +23,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
   },
 });

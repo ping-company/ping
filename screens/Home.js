@@ -1,14 +1,83 @@
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, ScrollView} from 'react-native';
 
+import { Button, Card, Title, Paragraph } from 'react-native-paper';
 
 type Props = {};
 export default class Home extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Home Screen</Text>
-      </View>
+      <ScrollView
+        style={styles.container}
+        contentContainerStyle={styles.content}
+      >
+      <ScrollView
+        horizontal
+      >
+        <Card style={styles.card}>
+          <Card.Content>
+            <Title>Card title</Title>
+            <Paragraph>Card content</Paragraph>
+          </Card.Content>
+          <Card.Cover source={{ uri: 'https://picsum.photos/100' }} />
+        </Card>
+        <Card style={styles.card}>
+          <Card.Content>
+            <Title>Card title</Title>
+            <Paragraph>Card content</Paragraph>
+          </Card.Content>
+          <Card.Cover source={{ uri: 'https://picsum.photos/150' }} />
+        </Card>
+        <Card style={styles.card}>
+          <Card.Content>
+            <Title>Card title</Title>
+            <Paragraph>Card content</Paragraph>
+          </Card.Content>
+          <Card.Cover source={{ uri: 'https://picsum.photos/250' }} />
+        </Card>
+        <Card style={styles.card}>
+          <Card.Content>
+            <Title>Card title</Title>
+            <Paragraph>Card content</Paragraph>
+          </Card.Content>
+          <Card.Cover source={{ uri: 'https://picsum.photos/250' }} />
+        </Card>
+      </ScrollView>
+
+        <Card style={styles.card}>
+            <Card.Cover source={{ uri: 'https://picsum.photos/200' }} />
+            <Card.Content>
+              <Title>Card title</Title>
+              <Paragraph>Card content</Paragraph>
+            </Card.Content>
+            <Card.Actions>
+              <Button>Cancel</Button>
+              <Button>Ok</Button>
+            </Card.Actions>
+          </Card>
+        <Card style={styles.card}>
+            <Card.Cover source={{ uri: 'https://picsum.photos/400' }} />
+            <Card.Content style={styles.content}>
+              <Title>Card title</Title>
+              <Paragraph>Card content</Paragraph>
+            </Card.Content>
+            <Card.Actions>
+              <Button>Cancel</Button>
+              <Button>Ok</Button>
+            </Card.Actions>
+          </Card>
+        <Card style={styles.card}>
+            <Card.Cover source={{ uri: 'https://picsum.photos/600' }} />
+            <Card.Content style={styles.content}>
+              <Title>Card title</Title>
+              <Paragraph>Card content</Paragraph>
+            </Card.Content>
+            <Card.Actions>
+              <Button>Cancel</Button>
+              <Button>Ok</Button>
+            </Card.Actions>
+          </Card>
+      </ScrollView>
     );
   }
 }
@@ -16,18 +85,14 @@ export default class Home extends Component<Props> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+  card: {
+    margin: 8,
+    borderRadius: 8
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+  content: {
+    padding: 4,
   },
+
 });
